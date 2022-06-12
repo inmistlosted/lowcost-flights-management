@@ -1,0 +1,24 @@
+{{> commons/header}}
+<div>
+    <h1 class="cntr">Flight #{{flight.id}}</h1>
+    <p class="cntr">Choose your seat:</p>
+    <div class="seats">
+        {{#flight.seats}}
+            {{#free}}
+                <div class="seat free" onclick="location.href='/buy?seatId={{seat_id}}'">
+                    <p class="number">{{number}}</p>
+                </div>
+            {{/free}}
+            {{^free}}
+                <div class="seat notfree">
+                    <p class="number">{{number}}</p>
+                </div>
+            {{/free}}
+        {{/flight.seats}}
+    </div>
+    <p class="infos">Direction:<span class="infos-tip" id="fldir">{{flight.direction}}</span></p>
+    <p class="infos">Departure date:<span class="infos-tip" id="fldep">{{flight.departureTime}}</span></p>
+    <p class="infos">Flight time:<span class="infos-tip">{{flight.flightTime}}</span></p>
+    <p class="infos">Price:<span class="infos-tip">${{flight.price}}</span></p>
+</div>
+{{> commons/footer}}

@@ -1,0 +1,20 @@
+{{> commons/header}}
+<h3 class="reg-header">Balance replenish</h3>
+<form action="/replenish" method="post">
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+    <table class="reg-table" style="width: 30%; left: 35%">
+        <tr class="reg-row">
+            <td class="reg-node" id="rep_ttl">Enter amount of money:</td>
+            <td>
+                <input name="money" class="reg-inp"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Replenish" class="reg-btn"
+                       onmouseover="this.style.background= 'dodgerblue'" onmouseout="this.style.background='darkblue'"/>
+            </td>
+        </tr>
+    </table>
+</form>
+{{> commons/footer}}

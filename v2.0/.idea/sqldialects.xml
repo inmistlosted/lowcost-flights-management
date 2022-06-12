@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/test/resources/create-seat-after.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/create-seat-before.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/create-user-after.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/create-user-before.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/create-user-before2.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/del-tickets.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/flights-list-after.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/flights-list-before.sql" dialect="MySQL" />
+  </component>
+</project>

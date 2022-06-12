@@ -1,0 +1,14 @@
+{{> commons/header}}
+<div class="flights">
+    {{#flights}}
+        <div class="flight" onclick="location.href='/flights?flightId={{id}}'">
+            <h2 style="text-align: center">Flight #{{id}}</h2>
+            <p>Direction:<span>{{direction}}</span></p>
+            <p>Departure date:<span>{{departureTime}}</span></p>
+            <p>Flight time:<span>{{flightTime}}</span></p>
+            <p>Number of seats available:<span>{{seatsNum}}</span></p>
+            <p>Price:<span>${{price}}</span></p>
+        </div>
+    {{/flights}}
+</div>
+{{> commons/footer}}
